@@ -40,15 +40,30 @@ document.getElementById('btn-total').addEventListener('click', function () {
 
 document.getElementById('bold').addEventListener('click', function () {
     const textarea = document.getElementById('textarea');
-    textarea.style.fontWeight = 'bold';
+    if (textarea.style.fontWeight === 'bold') {
+        textarea.style.fontWeight = 'normal';
+    }
+    else {
+        textarea.style.fontWeight = 'bold';
+    };
 });
 document.getElementById('italic').addEventListener('click', function () {
     const textarea = document.getElementById('textarea');
-    textarea.style.fontStyle = 'italic';
+    if (textarea.style.fontStyle === 'italic') {
+        textarea.style.fontStyle = 'normal';
+    }
+    else {
+        textarea.style.fontStyle = 'italic';
+    };
 });
 document.getElementById('underline').addEventListener('click', function () {
     const textarea = document.getElementById('textarea');
-    textarea.style.textDecoration = 'underline';
+    if (textarea.style.textDecoration === 'underline') {
+        textarea.style.textDecoration = 'none';
+    }
+    else {
+        textarea.style.textDecoration = 'underline';
+    };
 });
 
 
@@ -77,6 +92,10 @@ document.getElementById('color').addEventListener('click', function () {
 });
 document.getElementById('btn-uppercase').addEventListener('click', function () {
     const textarea = document.getElementById('textarea');
-    textarea.style.textTransform = 'uppercase';
+    if (textarea.style.textTransform === 'uppercase') {
+        textarea.style.textTransform = 'none';
+    }
+    else {
+        textarea.style.textTransform = 'uppercase';
+    };
 });
-
