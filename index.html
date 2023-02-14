@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice DOM Basic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="text-center text-4xl my-12">
+            <h1 class="border inline px-5 bg-green-200 text-red-500 rounded">Some Javascript DOM System Applied Below
+            </h1>
+        </section>
+        <section class="text-lg w-3/4 mx-auto my-5">
+            <h1>All Cost: <span id="all-cost">1000</span> Taka</h1>
+            <p class="mb-5">Discount: 30%</p>
+            <button id="button"
+                class="bg-green-200 px-5 py-1 rounded hover:bg-green-300 hover:text-white">Total</button>
+            <h1>Net Total: <span id="net-total">00</span> Taka</h1>
+        </section>
+        <section class="text-lg w-3/4 mx-auto">
+            <h1>-----------------------------------------------------------------------------------------------------------------------------------
+            </h1>
+        </section>
+        <section class="text-lg w-3/4 mx-auto my-5">
+            <h1 class="mb-5">All Cost: <span id="cost">1000</span> Taka</h1>
+            <p>*Type coupon code "DISC30" for 30% discount</p>
+            <label>Discount:
+                <input id="input-discount" type="text" class="border border-green-500 px-2 mt-2">
+            </label>
+            <br><br>
+            <button id="btn-total"
+                class="bg-green-200 px-5 py-1 rounded hover:bg-green-300 hover:text-white">Total</button>
+            <h1>Net Total: <span id="total">00</span> Taka</h1>
+        </section>
+        <section class="border-2 w-3/4 mx-auto my-5">
+            <div class="block w-3/4 mx-auto mt-5 p-2 flex">
+                <div class="flex-1">
+                    <button id="bold" class="bg-red-100 rounded px-3 py-1 ">Bold</button>
+                    <button id="italic" class="bg-red-100 rounded px-3 py-1 ">Italic</button>
+                    <button id="underline" class="bg-red-100 rounded px-3 py-1 ">Underline</button>
+                </div>
+                <div class="flex-1">
+                    <button id="left" class="bg-red-100 rounded px-3 py-1 ">Left</button>
+                    <button id="center" class="bg-red-100 rounded px-3 py-1 ">Center</button>
+                    <button id="right" class="bg-red-100 rounded px-3 py-1 ">Right</button>
+                </div>
+                <div class="flex">
+                    <input type="number" min="16" id="input-font-size" class="border flex-1 w-10">
+                    <input type="color" id="color" name="favcolor" value="#ff0000">
+                    <button id="btn-uppercase" class="bg-red-100 rounded px-3 py-1 ">Uppercase</button>
+                </div>
+            </div>
+            <div>
+                <textarea class="block border-2 w-3/4 mx-auto my-5 p-5" name="" id="textarea" cols="60" rows="5"
+                    placeholder="Write something"></textarea>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
